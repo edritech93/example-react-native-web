@@ -22,14 +22,8 @@ const defaultStyle = {
 export default function StackNavigation(props) {
   const REF_NAV = useRef();
 
-  useEffect(() => {
-    if (REF_NAV && REF_NAV.current) {
-      props.stackRef(REF_NAV);
-    }
-  }, [REF_NAV, props]);
-
   return (
-    <NavigationContainer ref={REF_NAV}>
+    <NavigationContainer style={{flex: 1}} ref={REF_NAV}>
       <Stack.Navigator
         initialRouteName={'Splash'}
         screenOptions={({navigation}) => ({

@@ -1,10 +1,17 @@
-import React from 'react';
-import {View, Text} from 'react-native';
+import React, {useEffect} from 'react';
+import {View} from 'react-native';
+import {Loader, PaddedView, Text} from '../../component';
 
-export default function Splash() {
+export default function Splash(props) {
+  useEffect(() => {
+    setTimeout(() => {
+      props.navigation.replace('Login');
+    }, 1000);
+  }, [props]);
+
   return (
-    <View>
-      <Text> Splash </Text>
-    </View>
+    <PaddedView>
+      <Loader />
+    </PaddedView>
   );
 }

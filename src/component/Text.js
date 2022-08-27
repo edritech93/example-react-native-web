@@ -11,7 +11,7 @@ export function Text(props) {
           // fontFamily: Fonts.type.regular,
           fontSize: 16,
           lineHeight: 25,
-          color: Colors.textBackground,
+          // color: Colors.textBackground,
         },
         style,
       ]}
