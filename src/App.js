@@ -1,10 +1,15 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
+import {Inputs, PrimaryButton} from './component';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text> App </Text>
+      <Inputs title={'Email'} keyboardType={'email-address'} />
+      <View style={styles.wrapButton}>
+        <PrimaryButton title={'Masuk'} />
+        <PrimaryButton title={'Masuk'} />
+      </View>
     </View>
   );
 }
@@ -12,8 +17,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'green',
-    alignItems: 'center',
-    justifyContent: 'center',
+    height: 500,
+    flexDirection: 'column',
+    backgroundColor: 'red',
+  },
+  wrapButton: {
+    flexDirection: 'row',
   },
 });
