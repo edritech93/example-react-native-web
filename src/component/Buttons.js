@@ -5,9 +5,7 @@ import {Fonts, Metrics} from '../themes';
 
 const styles = StyleSheet.create({
   textStyle: {
-    fontFamily: Fonts.type.medium,
-    fontSize: Metrics.scaleSize(14),
-    lineHeight: Metrics.scaleSize(21),
+    // fontFamily: Fonts.type.medium,
   },
 });
 

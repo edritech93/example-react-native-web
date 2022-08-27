@@ -1,6 +1,6 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
-import {Colors, Metrics} from '../themes';
+import {Colors} from '../themes';
 import {Text} from './Text';
 
 export default function TextError(props) {
@@ -14,8 +14,8 @@ export default function TextError(props) {
 
 const styles = StyleSheet.create({
   txtStyle: {
-    fontSize: Metrics.scaleSize(10),
-    lineHeight: Metrics.scaleSize(14),
+    fontSize: 10,
+    lineHeight: 14,
     color: Colors.red,
   },
 });
