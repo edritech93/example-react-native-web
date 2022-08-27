@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import React, {useRef} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Dashboard from './screens/dashboard';
@@ -23,7 +23,7 @@ export default function StackNavigation(props) {
   const REF_NAV = useRef();
 
   return (
-    <NavigationContainer style={{flex: 1}} ref={REF_NAV}>
+    <NavigationContainer ref={REF_NAV}>
       <Stack.Navigator
         initialRouteName={'Splash'}
         screenOptions={({navigation}) => ({

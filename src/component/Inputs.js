@@ -27,15 +27,6 @@ export default function Inputs(props) {
         placeholder={`Type ${title}`}
         error={error}
         secureTextEntry={hidePassword}
-        right={
-          <View
-            style={{
-              width: 24,
-              height: 24,
-              backgroundColor: 'red',
-            }}
-          />
-        }
         {...restProps}
       />
       <TextError isError={error} message={message} />

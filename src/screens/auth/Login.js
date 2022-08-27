@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import {Card} from 'react-native-paper';
-import {Inputs, PrimaryButton} from '../../component';
+import {Inputs, PrimaryButton, SecondaryButton} from '../../component';
 
 export default function Login() {
   return (
@@ -12,16 +12,14 @@ export default function Login() {
           keyboardType={'email-address'}
           style={styles.wrapInput}
         />
-        <Inputs title={'Password'} style={styles.wrapInput} />
+        <Inputs title={'Password'} isPassword={true} style={styles.wrapInput} />
         <View style={styles.wrapButton}>
-          <PrimaryButton
+          <SecondaryButton
             title={'Mendaftar'}
-            onPress={() => {
-              alert('hello');
-            }}
+            onPress={() => {}}
             style={styles.btnRegister}
           />
-          <PrimaryButton title={'Masuk'} />
+          <PrimaryButton title={'Masuk'} onPress={() => {}} />
         </View>
       </Card>
     </View>
