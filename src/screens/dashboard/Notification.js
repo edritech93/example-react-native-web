@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
+import {PaddedView, Text} from '../../component';
 
-export default class Notification extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <View>
-        <Text> Notification </Text>
-      </View>
-    );
-  }
+export default function Notification(props) {
+  return (
+    <PaddedView>
+      <Text> Notification </Text>
+    </PaddedView>
+  );
 }

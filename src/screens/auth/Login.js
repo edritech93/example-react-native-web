@@ -3,7 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import {Card} from 'react-native-paper';
 import {Inputs, PrimaryButton, SecondaryButton} from '../../component';
 
-export default function Login() {
+export default function Login(props) {
   return (
     <View style={styles.container}>
       <Card style={styles.wrapContent} mode={'elevated'}>
@@ -19,7 +19,12 @@ export default function Login() {
             onPress={() => {}}
             style={styles.btnRegister}
           />
-          <PrimaryButton title={'Masuk'} onPress={() => {}} />
+          <PrimaryButton
+            title={'Masuk'}
+            onPress={() => {
+              props.navigation.replace('Dashboard');
+            }}
+          />
         </View>
       </Card>
     </View>

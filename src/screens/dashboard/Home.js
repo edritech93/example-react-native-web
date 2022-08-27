@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
-import {View, Text} from 'react-native';
+import {View} from 'react-native';
+import {PaddedView, Text} from '../../component';
 
-export default class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <View>
-        <Text> Home </Text>
-      </View>
-    );
-  }
+export default function Home(props) {
+  return (
+    <PaddedView>
+      <Text> Home </Text>
+    </PaddedView>
+  );
 }
